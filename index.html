@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre seu pet para que possamos atendê-los melhor!">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    
+    <title>Cadastro - Pet Shop</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <img src="./pets.png" alt="imagem-cao-e-gato">
+      <h1>Cadastrar Pet</h1>
+      <form action="">
+        <div class="nome-idade">
+          <input type="text" name="nome" id="nome" placeholder="Nome do Pet" class="nome">
+          <input type="number" name="idade" id="idade" placeholder="Idade" class="idade">
+        </div>
+        <input type="text" name="dono" id="dono" placeholder="Nome Completo do responsável">
+        <input type="email" name="email" id="email" placeholder="Email do responsável">
+        
+        <div class="especie">
+          <p>Espécie:</p>
+          <span>
+            <input type="radio" name="especie" id="canino">
+            <label for="canino">Canino</label>
+          </span>
+          <span>
+            <input type="radio" name="especie" id="felino">
+            <label for="felino">Felino</label>
+          </span>
+        </div>
+
+        <div class="porte">
+        <label for="port">Porte:</label>
+        <select id="port" required>
+          <option selected disabled value="">Selecione</option>
+          <option>Pequeno</option>
+          <option>Médio</option>
+          <option>Grande</option>
+        </select>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>

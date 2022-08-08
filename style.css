@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2DAA6D;
+  color: #5F5F5F;
+}
+
+.container {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+}
+
+h1 {
+  color: #2DAA6D;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+input {
+  background-color: #DDDDDD;
+  border: none;
+  outline: none;
+  padding: 0.7rem 1rem;
+  margin: 3px 0;
+  border-radius: 5px;
+  color: #484848;
+  font-size: 12px;
+}
+
+button {
+  background-color: #36D286;
+  border: none;
+  padding: 0.7rem 1rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #2DAA6D;
+}
+
+.nome-idade {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nome {
+  width: 65%;
+}
+
+.idade {
+  width: 30%;
+}
+
+input[type=email] {
+  width: 100%;
+}
+
+.especie {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.porte {
+  margin-top: 10px;
+}
+
+select {
+  margin-left: 6px;
+  width: 55%;
+}
+
+p {
+  margin: 10px 8px 5px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+}
+
+img {
+  width: 150px;
+  height: 90px;
+  position: absolute;
+  top: -87px;
+  transform: translateX(32%);
+}
+
+span {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
